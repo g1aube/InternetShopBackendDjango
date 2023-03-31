@@ -13,3 +13,5 @@ class ProductInfo(models.Model):
     quantity = models.PositiveIntegerField(blank=False)
     price = models.IntegerField()
     product = models.ForeignKey(Product, blank=False, on_delete=models.CASCADE)
+    description = models.CharField(max_length=200, blank=True)
+
